@@ -65,7 +65,7 @@ class Item {
   }
 
   /**
-   * @return {number} ID
+   * @return {Object[]}	シートの最後の行の後に挿入する値の配列。
    */
   appendRow() {
     return this.sheet.appendRow(this.toArray());
