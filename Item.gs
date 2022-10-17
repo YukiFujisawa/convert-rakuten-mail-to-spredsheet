@@ -78,4 +78,5 @@ function testCreateFromEmailBody() {
   const itemSheet = SpreadsheetApp.getActiveSheet();
   const body = sheet.getRange('B2:B2').getValue();
   const items = Item.createFromEmailBody(itemSheet, body)
+  Logger.log(items);
 }
